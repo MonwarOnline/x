@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interactive Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>✨ WebSite</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Our Simple Website</h1>
+                <p class="hero-subtitle">A beautiful, interactive experience built with HTML, CSS, and JavaScript</p>
+                <button class="cta-button" id="ctaButton">Get Started</button>
+            </div>
+            <div class="hero-animation">
+                <div class="floating-circle"></div>
+                <div class="floating-circle"></div>
+                <div class="floating-circle"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About This Website</h2>
+                <p>This is a demonstration of a simple yet modern website built using pure HTML, CSS, and JavaScript. It features responsive design, smooth animations, and interactive elements.</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="100">0</span>
+                        <span class="stat-label">% Pure Code</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Lines of Code</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card" data-feature="responsive">
+                        <div class="feature-icon">📱</div>
+                        <h3>Responsive Design</h3>
+                        <p>Looks great on all devices, from mobile to desktop</p>
+                    </div>
+                    <div class="feature-card" data-feature="animations">
+                        <div class="feature-icon">✨</div>
+                        <h3>Smooth Animations</h3>
+                        <p>Engaging CSS animations and transitions</p>
+                    </div>
+                    <div class="feature-card" data-feature="interactive">
+                        <div class="feature-icon">🎯</div>
+                        <h3>Interactive Elements</h3>
+                        <p>JavaScript-powered interactive components</p>
+                    </div>
+                    <div class="feature-card" data-feature="modern">
+                        <div class="feature-icon">🎨</div>
+                        <h3>Modern Design</h3>
+                        <p>Clean, contemporary styling with dark mode</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Form</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" required rows="4"></textarea>
+                        <label for="message">Message</label>
+                    </div>
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+                <div class="form-success" id="formSuccess">
+                    <div class="success-icon">✅</div>
+                    <p>Thank you! Your message has been sent.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Simple Website. Made with ❤️ using HTML, CSS & JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
